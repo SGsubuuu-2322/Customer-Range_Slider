@@ -14,3 +14,18 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+h2 {
+  position: absolute;
+  top: 10px;
+}
+
+.range-container {
+  position: relative;
+}
+
+input[type="range"] {
+  width: 400px;
+  margin: 10px 0;
+  -webkit-appearance: none;
+}
