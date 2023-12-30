@@ -39,7 +39,7 @@ input[type="range"] + label {
   background-color: #fff;
   position: absolute;
   top: -25px;
-  left: 130px;
+  left: 150px;
   width: 80px;
   text-align: center;
   padding: 5px 0;
@@ -55,6 +55,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   cursor: pointer;
   height: 10px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -65,16 +66,17 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   border: 2px solid rgb(128, 0, 58);
   margin-top: -5px;
+  cursor: pointer;
 }
 
-/* For mozilla browser.... */
+/* For mozilla firefox browser.... */
 
 input[type="range"]::-moz-range-track {
   width: 100%;
   background-color: rgb(128, 0, 58);
-  cursor: pointer;
   height: 10px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -85,4 +87,26 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   border: 2px solid rgb(128, 0, 58);
   margin-top: -5px;
+  cursor: pointer;
+}
+
+/* For IE browser.... */
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  background-color: rgb(128, 0, 58);
+  height: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  -ms-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid rgb(128, 0, 58);
+  margin-top: -5px;
+  cursor: pointer;
 }
